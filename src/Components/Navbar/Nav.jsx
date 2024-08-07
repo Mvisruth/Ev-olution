@@ -3,6 +3,13 @@ import './Nav.css'
 
 export const Nav = () => {
   return (
-    <div>Nav</div>
+    <div className='nav'>
+
+        <div className='nav-logo'>Ev-olution</div>
+        <ul className='nav-menu'>
+
+        </ul>
+
+    </div>
   )
 }

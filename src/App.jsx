@@ -9,11 +9,12 @@ const App = () => {
       {text1:"Indulge",text2:"your passions"},      
       {text1:"Give in to",text2:"what you love"}      
  ]
-
+//create useState
  const [heroCount,setHeroCount]=useState(0)
- const [playStatus,setPlayStatus]= useState(true)
+ const [playStatus,setPlayStatus]= useState(false)
   return (
     <div>
+      {/* props being passed to the background component */}
       <Background playstatus={playStatus} HeroCount={heroCount}/>
     </div>
   )

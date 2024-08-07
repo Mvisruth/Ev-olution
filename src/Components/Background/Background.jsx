@@ -6,7 +6,7 @@ import image2 from '../../assets/image2.png'
 import image3 from '../../assets/image3.png'
 
 
-
+//{ playstatus, HeroCount }Destructures the playstatus and HeroCount props from the props object
 export const Background = ({playstatus,HeroCount}) => {
   if(playstatus)
   {
