@@ -1,5 +1,7 @@
 import React, { useState } from 'react'
 import { Background } from './Components/Background/Background'
+import { Nav } from './Components/Navbar/Nav'
+import { Hero } from './Components/Hero/Hero'
 
 const App = () => {
 
@@ -16,6 +18,14 @@ const App = () => {
     <div>
       {/* props being passed to the background component */}
       <Background playstatus={playStatus} HeroCount={heroCount}/>
+      <Nav/>
+      <Hero
+      playstatus={playStatus}
+      setplaystatus={setPlayStatus}
+      heroData={heroData[heroCount]}
+      HeroCount={heroCount}
+      setherocount={setHeroCount}
+      />
     </div>
   )
 }
