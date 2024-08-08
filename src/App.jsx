@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { Background } from './Components/Background/Background'
 import { Nav } from './Components/Navbar/Nav'
 import { Hero } from './Components/Hero/Hero'
@@ -14,6 +14,13 @@ const App = () => {
 //create useState
  const [heroCount,setHeroCount]=useState(0)
  const [playStatus,setPlayStatus]= useState(false)
+
+ useEffect(()=>{
+  setInterval(()=>{
+  setHeroCount((count)=>{return count===2?0:count+1})
+  },3000)
+ }
+,[])
   return (
     <div>
       {/* props being passed to the background component */}
