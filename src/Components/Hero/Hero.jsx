@@ -5,7 +5,7 @@ import play from '../../assets/play_icon.png'
 import pause from '../../assets/pause_icon.png'
 export const Hero = ({playstatus,setplaystatus,heroData,HeroCount,setherocount}) => {
   return (
-    <div className='Hero'>
+    <div className='hero'>
         <div className='hero-text'>
          <p>{heroData.text1}</p>
          <p>{heroData.text2}</p>
